@@ -1,0 +1,13 @@
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: client-service
+#          uri: lb://MS-CLIENT
+#          predicates:
+#            - Path=/clients/**
+#        - id: voiture-service
+#          uri: lb://MS-VOITURE
+#          predicates:
+#            - Path=/voitures/**
+#
