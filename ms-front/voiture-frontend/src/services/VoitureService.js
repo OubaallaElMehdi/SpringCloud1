@@ -11,5 +11,5 @@ export const getVoituresByClient = (clientId) => {
 };
 
 export const addVoiture = (clientId, voiture) => {
-  return axios.post(`http://localhost:8089/voitures/${clientId}`, voiture);
+  return axios.post(`${API_URL}/voitures/${clientId}`, voiture);
 };
